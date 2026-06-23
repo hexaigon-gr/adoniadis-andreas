@@ -6,7 +6,23 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-roboto);
+
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
+  --font-mono: var(--font-mono);
+
+  /* Automotive brand tokens */
+  --color-brand: var(--brand);
+  --color-brand-bright: var(--brand-bright);
+  --color-brand-dark: var(--brand-dark);
+  --color-brand-foreground: var(--brand-foreground);
+  --color-carbon: var(--carbon);
+  --color-carbon-deep: var(--carbon-deep);
+  --color-carbon-soft: var(--carbon-soft);
+  --color-steel: var(--steel);
+  --color-silver: var(--silver);
+  --color-cream: var(--cream);
+
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -46,27 +62,48 @@
 }
 
 :root {
-  --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.129 0.042 264.695);
+  --radius: 0.5rem;
+
+  /* Neutral / surface — soft steel-white */
+  --background: oklch(0.986 0.002 247);
+  --foreground: oklch(0.205 0.012 262);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.129 0.042 264.695);
+  --card-foreground: oklch(0.205 0.012 262);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: oklch(0.208 0.042 265.755);
-  --primary-foreground: oklch(0.984 0.003 247.858);
-  --secondary: oklch(0.968 0.007 247.896);
-  --secondary-foreground: oklch(0.208 0.042 265.755);
-  --muted: oklch(0.968 0.007 247.896);
-  --muted-foreground: oklch(0.554 0.046 257.417);
-  --accent: oklch(0.968 0.007 247.896);
-  --accent-foreground: oklch(0.208 0.042 265.755);
+  --popover-foreground: oklch(0.205 0.012 262);
+
+  /* Primary = carbon ink */
+  --primary: oklch(0.225 0.013 262);
+  --primary-foreground: oklch(0.986 0.002 247);
+
+  --secondary: oklch(0.96 0.004 247);
+  --secondary-foreground: oklch(0.225 0.013 262);
+  --muted: oklch(0.955 0.004 247);
+  --muted-foreground: oklch(0.515 0.012 262);
+  --accent: oklch(0.955 0.012 27);
+  --accent-foreground: oklch(0.225 0.013 262);
+
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.929 0.013 255.508);
-  --input: oklch(0.929 0.013 255.508);
-  --ring: oklch(0.704 0.04 256.788);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
+  --border: oklch(0.905 0.005 262);
+  --input: oklch(0.905 0.005 262);
+  --ring: oklch(0.555 0.214 27);
+
+  /* Automotive palette */
+  --brand: oklch(0.557 0.216 27.5);
+  --brand-bright: oklch(0.645 0.228 27.5);
+  --brand-dark: oklch(0.468 0.188 27.5);
+  --brand-foreground: oklch(0.99 0.01 27);
+  --brand-primary: var(--brand);
+
+  --carbon: oklch(0.205 0.014 262);
+  --carbon-deep: oklch(0.152 0.012 262);
+  --carbon-soft: oklch(0.268 0.014 262);
+  --steel: oklch(0.45 0.013 262);
+  --silver: oklch(0.72 0.008 262);
+  --cream: oklch(0.966 0.013 83);
+
+  --chart-1: oklch(0.557 0.216 27.5);
+  --chart-2: oklch(0.45 0.013 262);
   --chart-3: oklch(0.398 0.07 227.392);
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
@@ -82,29 +119,24 @@
 }
 
 .dark {
-  --background: oklch(0.129 0.042 264.695);
+  --background: oklch(0.152 0.012 262);
   --foreground: oklch(0.984 0.003 247.858);
-  --card: oklch(0.14 0.04 259.21);
+  --card: oklch(0.205 0.014 262);
   --card-foreground: oklch(0.984 0.003 247.858);
-  --popover: oklch(0.208 0.042 265.755);
+  --popover: oklch(0.205 0.014 262);
   --popover-foreground: oklch(0.984 0.003 247.858);
-  --primary: oklch(0.929 0.013 255.508);
-  --primary-foreground: oklch(0.208 0.042 265.755);
-  --secondary: oklch(0.279 0.041 260.031);
+  --primary: oklch(0.984 0.003 247.858);
+  --primary-foreground: oklch(0.205 0.014 262);
+  --secondary: oklch(0.268 0.014 262);
   --secondary-foreground: oklch(0.984 0.003 247.858);
-  --muted: oklch(0.279 0.041 260.031);
-  --muted-foreground: oklch(0.704 0.04 256.788);
-  --accent: oklch(0.279 0.041 260.031);
+  --muted: oklch(0.268 0.014 262);
+  --muted-foreground: oklch(0.72 0.008 262);
+  --accent: oklch(0.268 0.014 262);
   --accent-foreground: oklch(0.984 0.003 247.858);
   --destructive: oklch(0.704 0.191 22.216);
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.551 0.027 264.364);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
+  --ring: oklch(0.557 0.216 27.5);
 }
 
 /* ── Prevent layout shift when Radix dialogs open ──
@@ -125,11 +157,75 @@ html body[data-scroll-locked] {
   padding-left: 0 !important;
 }
 
+/* Offset anchored sections for the fixed navbar */
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  /* Mono technical eyebrow label */
+  .eyebrow {
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    font-size: 0.72rem;
+    font-weight: 500;
+  }
+
+  /* Subtle film grain for atmospheric dark sections */
+  .bg-grain::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.5;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.35'/%3E%3C/svg%3E");
+  }
+
+  /* Diagonal carbon hatch — engineered texture */
+  .bg-hatch {
+    background-image: repeating-linear-gradient(
+      135deg,
+      color-mix(in oklch, var(--foreground) 4%, transparent) 0px,
+      color-mix(in oklch, var(--foreground) 4%, transparent) 1px,
+      transparent 1px,
+      transparent 9px
+    );
+  }
+
+  /* Reveal-on-load animation primitives */
+  @keyframes rise-in {
+    from {
+      opacity: 0;
+      transform: translateY(22px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .animate-rise {
+    animation: rise-in 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
   }
 }

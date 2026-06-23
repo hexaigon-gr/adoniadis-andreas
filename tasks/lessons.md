@@ -146,10 +146,11 @@ Rules, style preferences, and best practices. Review at session start.
 - **`SocialIcon`** (`@/components/social-icon.tsx`) — ALWAYS use for social media links in footer, contact sections, navbar. Never build custom social buttons. Provides platform-specific colors (instagram, youtube, facebook, twitter, tiktok, linkedin, spotify) and hover effects.
 - **`CircleIcon`** (`@/components/CircleIcon.tsx`) — Use for icon display in feature cards, services, about sections, highlights. Renders a Lucide icon inside a colored circular background.
 - **Lucide icons** — Only use raw Lucide icons for small inline UI elements (button icons, form labels, nav items). For any prominent icon display, wrap in `CircleIcon`.
-- **`ExpandMap`** (`@/components/expand-map.tsx`) — ALWAYS use for map displays (contact sections, footer, location pages). Never embed raw Google Maps iframes. Props: `address`, `mapsUrl`, `coordinates`.
+- **`ExpandMap`** (`@/components/expand-map.tsx`) — DECORATIVE placeholder only (draws invented streets/buildings + a fake "LIVE" badge). Use it ONLY for mockups/demos with no real address. For a REAL client with a real address, use a genuine Google Maps embed iframe (`https://www.google.com/maps?q=<address>&output=embed`, no API key needed) so the map shows the actual location. A fake map on a local-business "come find us" section reads as untrustworthy.
 
 ## Landing Page Patterns
 
+- **NO fake/placeholder data on real client sites** — never ship invented coordinates, fake "LIVE" map graphics, fabricated reviews/quotes, or guessed facts. Use only verified business data (cross-check phone/address/hours across the client's listings). For maps use a real Google Maps embed of the real address. If a fact can't be verified, omit it rather than invent it. Marketing claims (e.g. "transparent pricing") are fine when supported by the client's own sources.
 - **Extract business constants** — All hardcoded business data (phone, email, addresses, social URLs, map embeds) goes in `lib/general/constants.ts` as a single exported object. Never scatter these as magic strings across components.
 - **Smooth scrolling** — Add `scroll-behavior: smooth` to the html element in globals.css. All anchor links (`#services`, `#contact`) then scroll smoothly.
 - **Real photos over icons for services/products** — Lucide icons look generic. Use actual photos with gradient overlays and text on top. Download from Pexels if needed.

@@ -1,14 +1,202 @@
 {
-  "HomePage": {
-    "title": "Welcome",
-    "description": "Get started by editing this page.",
-    "components": {
-      "title": "Available Components",
-      "button": "Button",
-      "input": "Input",
-      "card": "Card",
-      "label": "Label"
+  "Nav": {
+    "services": "Services",
+    "about": "About",
+    "reviews": "Reviews",
+    "contact": "Contact",
+    "call": "Call us",
+    "book": "Book",
+    "menu": "Menu",
+    "close": "Close"
+  },
+  "Hero": {
+    "badge": "NISSAN Specialist Workshop",
+    "since": "Since 1970",
+    "titleA": "<hl>NISSAN</hl> specialists.",
+    "titleB": "Brilliant on every make.",
+    "subtitle": "A family-run workshop in Ilioupoli since 1970. Service, diagnostics and repairs with real expertise, genuine parts and transparent pricing.",
+    "ctaPrimary": "Call us",
+    "ctaSecondary": "See our services",
+    "trustRating": "{rating} on Google",
+    "trustReviews": "{count} reviews",
+    "trustNetwork": "AUTOFIT network member",
+    "trustBrands": "All makes",
+    "scroll": "Scroll",
+    "imageAlt": "NISSAN specialist workshop Andreas Antoniadis in Ilioupoli"
+  },
+  "Stats": {
+    "foundedValue": "1970",
+    "foundedLabel": "Established",
+    "ratingValue": "4.8★",
+    "ratingLabel": "Google rating",
+    "reviewsValue": "175",
+    "reviewsLabel": "Customer reviews",
+    "specialtyValue": "NISSAN",
+    "specialtyLabel": "Specialisation"
+  },
+  "Services": {
+    "eyebrow": "What we do",
+    "title": "Complete care for your car",
+    "subtitle": "From scheduled service to the most complex repairs: all under one roof, for every make.",
+    "cta": "Need something else? Call us",
+    "items": {
+      "maintenance": {
+        "name": "Service & Maintenance",
+        "desc": "Scheduled service to manufacturer specifications, using quality parts."
+      },
+      "diagnostics": {
+        "name": "Diagnostics",
+        "desc": "Electronic fault diagnosis with modern equipment, for every vehicle system."
+      },
+      "brakes": {
+        "name": "Brakes",
+        "desc": "Inspection, pad & disc replacement and full braking-system service."
+      },
+      "tires": {
+        "name": "Tyres & Alignment",
+        "desc": "Fitting, balancing and wheel alignment for safe driving."
+      },
+      "ac": {
+        "name": "A/C Service",
+        "desc": "Air-conditioning maintenance & recharge (R134a & R1234yf refrigerant) and sanitisation."
+      },
+      "electrical": {
+        "name": "Electrical & Batteries",
+        "desc": "Battery & charging checks, electrical and lighting-system repairs."
+      },
+      "suspension": {
+        "name": "Suspension",
+        "desc": "Shock absorbers, control arms and full suspension checks for comfort and grip."
+      },
+      "transmission": {
+        "name": "Transmission",
+        "desc": "Clutch, gearbox and drivetrain service."
+      },
+      "lubricants": {
+        "name": "Oils & Lubricants",
+        "desc": "Oil & filter changes with premium lubricants for every engine."
+      },
+      "emissions": {
+        "name": "Emissions & MOT Prep",
+        "desc": "Emissions card (K.E.K.) issuance and preparation for the KTEO/MOT."
+      },
+      "bodywork": {
+        "name": "Light Bodywork",
+        "desc": "Minor body repairs and restoring your vehicle's appearance."
+      },
+      "parts": {
+        "name": "Parts & Accessories",
+        "desc": "Genuine & quality spare parts and accessories for all makes."
+      }
     }
+  },
+  "Nissan": {
+    "eyebrow": "Our specialisation",
+    "title": "NISSAN is home for us",
+    "body": "We know every Nissan model inside out, from Micra, Note and Qashqai to Juke, X-Trail and Navara. Diagnostics, parts and repairs with manufacturer precision.",
+    "point1": "All Nissan models",
+    "point2": "Genuine parts",
+    "point3": "Specialist diagnostic equipment",
+    "cta": "Book a visit"
+  },
+  "About": {
+    "eyebrow": "Our story",
+    "title": "Half a century of caring for your car",
+    "lead": "Since 1970, the Antoniadis family has serviced and repaired cars in Ilioupoli.",
+    "p1": "We started as a small family workshop and grew into a specialist NISSAN service centre and AUTOFIT network member, always keeping the personal relationship of trust with every customer.",
+    "p2": "Today, with modern facilities and latest-generation diagnostic equipment, we take on every job, from a simple service to complex repairs, for all car makes.",
+    "signatureName": "Andreas Antoniadis",
+    "signatureRole": "Owner & Manager",
+    "badge1Value": "55+",
+    "badge1Label": "years of experience",
+    "badge2Value": "100%",
+    "badge2Label": "family-run"
+  },
+  "WhyUs": {
+    "eyebrow": "Why us",
+    "title": "Why drivers trust us",
+    "items": {
+      "specialist": {
+        "title": "NISSAN specialists",
+        "desc": "Deep expertise across every Nissan model, with full coverage for all makes."
+      },
+      "family": {
+        "title": "Family-run since 1970",
+        "desc": "Over 50 years of trust, carried from one generation to the next."
+      },
+      "genuine": {
+        "title": "Quality parts",
+        "desc": "Repairs with genuine, certified parts to manufacturer specification."
+      },
+      "transparent": {
+        "title": "Transparent pricing",
+        "desc": "Clear quotes before any work, with no surprises on the bill."
+      },
+      "technicians": {
+        "title": "Certified technicians",
+        "desc": "An experienced team with modern diagnostic equipment."
+      },
+      "network": {
+        "title": "AUTOFIT network member",
+        "desc": "Nationwide support and warranty through the AUTOFIT network."
+      }
+    }
+  },
+  "Reviews": {
+    "eyebrow": "Reviews",
+    "title": "Trusted by hundreds of drivers",
+    "subtitle": "Our Google rating speaks for our work.",
+    "outOf": "out of 5",
+    "basedOn": "based on {count} customer reviews",
+    "highlight1": "Reliable workmanship",
+    "highlight2": "Honest service",
+    "highlight3": "Fair pricing",
+    "cta": "Read the reviews on Google"
+  },
+  "SisterCompany": {
+    "eyebrow": "From the same family",
+    "title": "Looking for your next vehicle?",
+    "body": "Our sister company, Wheel Way, trades quality used cars and motorhomes in Rafina. We look after your car, and Wheel Way helps you find the next one.",
+    "point1": "Cars",
+    "point2": "Motorhomes",
+    "point3": "Rafina",
+    "cta": "Visit Wheel Way",
+    "logoAlt": "Wheel Way, used cars & motorhomes dealership"
+  },
+  "Contact": {
+    "eyebrow": "Get in touch",
+    "title": "Visit our workshop",
+    "subtitle": "In the heart of Ilioupoli, easy to reach. Call us or drop by.",
+    "addressLabel": "Address",
+    "phoneLabel": "Phone",
+    "mobileLabel": "Mobile",
+    "emailLabel": "Email",
+    "hoursLabel": "Opening hours",
+    "weekdays": "Monday-Friday",
+    "saturday": "Saturday",
+    "sunday": "Sunday",
+    "closed": "Closed",
+    "directions": "Directions",
+    "callNow": "Call now",
+    "openMaps": "Open in Maps",
+    "openNow": "Open now",
+    "closedNow": "Closed now"
+  },
+  "Footer": {
+    "tagline": "NISSAN specialist workshop in Ilioupoli. Family care for your car since 1970.",
+    "quickLinks": "Links",
+    "contactTitle": "Contact",
+    "followTitle": "Follow us",
+    "legalTitle": "Company details",
+    "afmLabel": "VAT No.",
+    "doyLabel": "Tax office",
+    "gemhLabel": "G.E.MI. No.",
+    "legalFormLabel": "Legal form",
+    "legalNameLabel": "Registered name",
+    "rights": "All rights reserved.",
+    "madeBy": "Designed & built by",
+    "sisterLabel": "Sister company",
+    "sisterDesc": "Cars & motorhomes"
   },
   "Admin": {
     "nav": {
