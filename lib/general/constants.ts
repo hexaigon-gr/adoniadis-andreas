@@ -105,16 +105,13 @@ export const SERVICES = [
   { key: "maintenance", image: "/images/service-maintenance.jpg", featured: true },
   { key: "diagnostics", image: "/images/service-diagnostics.jpg", featured: true },
   { key: "brakes", image: "/images/service-brakes.jpg", featured: true },
-  { key: "tires", image: "/images/service-tires.jpg", featured: true },
   { key: "ac", image: "/images/service-ac.jpg", featured: true },
-  { key: "electrical", image: "/images/service-electrical.jpg", featured: true },
+  { key: "batteries", image: "/images/service-electrical.jpg", featured: true },
   { key: "suspension", image: null, featured: false },
   { key: "transmission", image: null, featured: false },
   { key: "lubricants", image: null, featured: false },
-  { key: "lighting", image: null, featured: false },
   { key: "lpg", image: null, featured: false },
   { key: "emissions", image: null, featured: false },
-  { key: "bodywork", image: null, featured: false },
   { key: "parts", image: null, featured: false },
 ] as const;
 

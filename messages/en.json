@@ -52,21 +52,13 @@
         "name": "Brakes",
         "desc": "Inspection, pad & disc replacement and full braking-system service."
       },
-      "tires": {
-        "name": "Tyres & Alignment",
-        "desc": "Fitting, balancing and wheel alignment for safe driving."
-      },
       "ac": {
         "name": "A/C Service",
         "desc": "Air-conditioning maintenance & recharge (R134a & R1234yf refrigerant) and sanitisation."
       },
-      "electrical": {
-        "name": "Electrical & Batteries",
-        "desc": "Battery & charging checks and electrical-system repairs."
-      },
-      "lighting": {
-        "name": "Lighting System",
-        "desc": "Inspection and replacement of bulbs, headlights and the whole lighting system."
+      "batteries": {
+        "name": "Batteries",
+        "desc": "Battery testing, charging and replacement for a reliable start in any season."
       },
       "lpg": {
         "name": "LPG / Autogas",
@@ -88,13 +80,9 @@
         "name": "Emissions & MOT Prep",
         "desc": "Emissions card (K.E.K.) issuance and preparation for the KTEO/MOT."
       },
-      "bodywork": {
-        "name": "Light Bodywork",
-        "desc": "Minor body repairs and restoring your vehicle's appearance."
-      },
       "parts": {
         "name": "Parts & Accessories",
-        "desc": "Genuine & quality spare parts and accessories for all makes."
+        "desc": "Genuine parts and branded, certified after-market parts for all makes."
       }
     }
   },
@@ -103,7 +91,7 @@
     "title": "NISSAN is home for us",
     "body": "We know every Nissan model inside out, from Micra, Note and Qashqai to Juke, X-Trail and Navara. Diagnostics, parts and repairs with manufacturer precision.",
     "point1": "All Nissan models",
-    "point2": "Genuine parts",
+    "point2": "Genuine & after-market parts",
     "point3": "Specialist diagnostic equipment",
     "cta": "Book a visit"
   },
@@ -111,7 +99,7 @@
     "eyebrow": "Our story",
     "title": "Half a century of caring for your car",
     "lead": "Since 1970, the Antoniadis family has serviced and repaired cars in Ilioupoli.",
-    "p1": "We started as a small family workshop and grew into a specialist NISSAN service centre and AUTOFIT network member, always keeping the personal relationship of trust with every customer.",
+    "p1": "Evangelos Antoniadis founded the workshop in 1970. From a small family workshop we grew into a specialist NISSAN service centre and AUTOFIT network member, always keeping the personal relationship of trust with every customer.",
     "p2": "Today, with modern facilities and latest-generation diagnostic equipment, we take on every job, from a simple service to complex repairs, for all car makes.",
     "signatureName": "Andreas Antoniadis",
     "signatureRole": "Owner & Manager",
@@ -134,7 +122,7 @@
       },
       "genuine": {
         "title": "Quality parts",
-        "desc": "Repairs with genuine, certified parts to manufacturer specification."
+        "desc": "Genuine parts and branded, certified after-market parts for every repair."
       },
       "transparent": {
         "title": "Transparent pricing",
