@@ -1,4 +1,11 @@
-import { ArrowUpRight, BadgeCheck, Star, ThumbsUp, Wallet } from "lucide-react";
+import {
+  ArrowUpRight,
+  Award,
+  BadgeCheck,
+  Star,
+  ThumbsUp,
+  Wallet,
+} from "lucide-react";
 import { getTranslations } from "next-intl/server";
 
 import { Reveal } from "@/components/landing/motion";
@@ -101,6 +108,13 @@ export const Reviews = async () => {
               </Button>
             </div>
           </div>
+        </Reveal>
+
+        <Reveal delay={0.15} className="mx-auto mt-6 flex max-w-3xl justify-center">
+          <span className="inline-flex items-center gap-2.5 rounded-full border border-border bg-card px-5 py-2.5 text-center text-sm font-medium text-foreground shadow-sm">
+            <Award className="size-4 shrink-0 text-brand" />
+            {t("award")}
+          </span>
         </Reveal>
       </div>
     </section>

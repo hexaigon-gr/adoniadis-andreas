@@ -1,4 +1,12 @@
-import { Clock, Mail, MapPin, Navigation, Phone, Smartphone } from "lucide-react";
+import {
+  Clock,
+  Mail,
+  MapPin,
+  Navigation,
+  Phone,
+  PhoneCall,
+  Smartphone,
+} from "lucide-react";
 import { getTranslations } from "next-intl/server";
 
 import { Reveal } from "@/components/landing/motion";
@@ -92,6 +100,23 @@ export const Contact = async () => {
                     className="mt-1 block font-mono font-medium text-foreground transition-colors duration-300 hover:text-brand"
                   >
                     {CONTACT.mobileDisplay}
+                  </a>
+                </div>
+              </li>
+
+              <li className="flex items-start gap-4 p-5">
+                <Icon>
+                  <PhoneCall className="size-5" />
+                </Icon>
+                <div>
+                  <div className="eyebrow text-muted-foreground">
+                    {t("hotlineLabel")}
+                  </div>
+                  <a
+                    href={`tel:${CONTACT.hotline}`}
+                    className="mt-1 block font-mono font-medium text-foreground transition-colors duration-300 hover:text-brand"
+                  >
+                    {CONTACT.hotlineDisplay}
                   </a>
                 </div>
               </li>

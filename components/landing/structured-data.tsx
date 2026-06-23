@@ -11,6 +11,8 @@ const SERVICE_NAMES = {
     "Σύστημα Ανάρτησης",
     "Σύστημα Μετάδοσης",
     "Λιπαντικά & Αλλαγή Λαδιών",
+    "Σύστημα Φωτισμού",
+    "Υγραεριοκίνηση (LPG)",
     "Κάρτα Καυσαερίων & ΚΤΕΟ",
     "Φανοποιία",
     "Ανταλλακτικά & Αξεσουάρ",
@@ -25,6 +27,8 @@ const SERVICE_NAMES = {
     "Suspension",
     "Transmission",
     "Oils & Lubricants",
+    "Lighting System",
+    "LPG / Autogas",
     "Emissions & MOT Prep",
     "Light Bodywork",
     "Parts & Accessories",
@@ -76,6 +80,11 @@ export const StructuredData = ({ locale }: StructuredDataProps) => {
       postalCode: CONTACT.address.postalCode.replace(/\s/g, ""),
       addressRegion: CONTACT.address.region,
       addressCountry: "GR",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: CONTACT.coordinates.lat,
+      longitude: CONTACT.coordinates.lng,
     },
     openingHoursSpecification: [
       {

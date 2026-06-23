@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 
 import { About } from "@/components/landing/about";
+import { AutofitBand } from "@/components/landing/autofit-band";
 import { Contact } from "@/components/landing/contact";
 import { Hero } from "@/components/landing/hero";
 import { Navbar } from "@/components/landing/navbar";
@@ -77,6 +78,7 @@ const Home = async ({ params }: BasePageProps) => {
         <NissanBand />
         <About />
         <WhyUs />
+        <AutofitBand />
         <Reviews />
         <SisterCompany />
         <Contact />

@@ -34,6 +34,9 @@ export const CONTACT = {
   phoneAltDisplay: "210 993 7666",
   mobile: "+306974416181",
   mobileDisplay: "697 441 6181",
+  /** AUTOFIT network-wide customer service hotline */
+  hotline: "8011178200",
+  hotlineDisplay: "801 11 78200",
   email: "antoniadis@autofit.gr",
   address: {
     street: "Ισαύρων 2-4",
@@ -43,19 +46,20 @@ export const CONTACT = {
     postalCode: "163 45",
     full: "Ισαύρων 2-4, Ηλιούπολη 163 45",
   },
+  /** Exact storefront coordinates (from the official AUTOFIT partner listing) */
+  coordinates: { lat: 37.9390420076754, lng: 23.7569092959166 },
 } as const;
 
 const MAPS_QUERY = "Ανδρέας Αντωνιάδης Συνεργείο Ισαύρων 2-4 Ηλιούπολη 163 45";
+const COORDS = `${CONTACT.coordinates.lat},${CONTACT.coordinates.lng}`;
 
 /** Opens the business location in Google Maps */
 export const MAPS_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
   MAPS_QUERY,
 )}`;
 
-/** Turn-by-turn directions to the workshop */
-export const DIRECTIONS_URL = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(
-  MAPS_QUERY,
-)}`;
+/** Turn-by-turn directions to the exact storefront */
+export const DIRECTIONS_URL = `https://www.google.com/maps/dir/?api=1&destination=${COORDS}`;
 
 /** Embeddable Google map of the real location (no API key required) */
 export const MAPS_EMBED_URL = `https://www.google.com/maps?q=${encodeURIComponent(
@@ -107,6 +111,8 @@ export const SERVICES = [
   { key: "suspension", image: null, featured: false },
   { key: "transmission", image: null, featured: false },
   { key: "lubricants", image: null, featured: false },
+  { key: "lighting", image: null, featured: false },
+  { key: "lpg", image: null, featured: false },
   { key: "emissions", image: null, featured: false },
   { key: "bodywork", image: null, featured: false },
   { key: "parts", image: null, featured: false },

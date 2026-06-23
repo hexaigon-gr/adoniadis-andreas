@@ -62,7 +62,15 @@
       },
       "electrical": {
         "name": "Electrical & Batteries",
-        "desc": "Battery & charging checks, electrical and lighting-system repairs."
+        "desc": "Battery & charging checks and electrical-system repairs."
+      },
+      "lighting": {
+        "name": "Lighting System",
+        "desc": "Inspection and replacement of bulbs, headlights and the whole lighting system."
+      },
+      "lpg": {
+        "name": "LPG / Autogas",
+        "desc": "Maintenance and servicing of LPG autogas systems for cleaner, cheaper driving."
       },
       "suspension": {
         "name": "Suspension",
@@ -151,7 +159,17 @@
     "highlight1": "Reliable workmanship",
     "highlight2": "Honest service",
     "highlight3": "Fair pricing",
-    "cta": "Read the reviews on Google"
+    "cta": "Read the reviews on Google",
+    "award": "Reader-voted among AutoΤρίτη's Best Workshops"
+  },
+  "Autofit": {
+    "eyebrow": "AUTOFIT network",
+    "title": "Backed by the AUTOFIT network",
+    "subtitle": "As a certified AUTOFIT member, we give you the benefits of a nationwide network with the personal care of a family workshop.",
+    "point1Title": "Parts with warranty",
+    "point1Desc": "We use quality, certified spare parts that are covered by a warranty.",
+    "point2Title": "Factory warranty kept intact",
+    "point2Desc": "Servicing at our workshop does not affect your car's factory warranty."
   },
   "SisterCompany": {
     "eyebrow": "From the same family",
@@ -170,6 +188,7 @@
     "addressLabel": "Address",
     "phoneLabel": "Phone",
     "mobileLabel": "Mobile",
+    "hotlineLabel": "AUTOFIT customer service",
     "emailLabel": "Email",
     "hoursLabel": "Opening hours",
     "weekdays": "Monday-Friday",
