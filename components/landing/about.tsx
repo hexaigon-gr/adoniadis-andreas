@@ -14,7 +14,7 @@ export const About = async () => {
           <div className="absolute -bottom-4 -left-4 hidden h-full w-full rounded-xl border border-brand/30 lg:block" />
           <div className="relative aspect-4/3 overflow-hidden rounded-xl border border-border shadow-xl">
             <Image
-              src="/images/workshop.jpg"
+              src="/images/workshop-interior.jpg"
               alt={t("title")}
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"

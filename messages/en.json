@@ -187,7 +187,9 @@
     "callNow": "Call now",
     "openMaps": "Open in Maps",
     "openNow": "Open now",
-    "closedNow": "Closed now"
+    "closedNow": "Closed now",
+    "storefrontAlt": "The storefront of Andreas Antoniadis workshop in Ilioupoli",
+    "storefrontBadge": "Our workshop"
   },
   "Footer": {
     "tagline": "NISSAN specialist workshop in Ilioupoli. Family care for your car since 1970.",

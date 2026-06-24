@@ -7,6 +7,7 @@ import {
   PhoneCall,
   Smartphone,
 } from "lucide-react";
+import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 
 import { Reveal } from "@/components/landing/motion";
@@ -194,8 +195,22 @@ export const Contact = async () => {
             </div>
           </div>
 
-          {/* Real location map */}
+          {/* Real storefront + location map */}
           <div className="flex min-h-80 flex-col overflow-hidden rounded-2xl border border-border shadow-sm">
+            <div className="relative aspect-video w-full shrink-0">
+              <Image
+                src="/images/storefront.jpg"
+                alt={t("storefrontAlt")}
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-linear-to-t from-carbon-deep/40 to-transparent" />
+              <span className="absolute bottom-3 left-3 flex items-center gap-1.5 rounded-md bg-carbon-deep/70 px-2.5 py-1 font-mono text-[0.6rem] uppercase tracking-wider text-white backdrop-blur-sm">
+                <MapPin className="size-3 text-brand-bright" />
+                {t("storefrontBadge")}
+              </span>
+            </div>
             <iframe
               title={CONTACT.address.full}
               src={MAPS_EMBED_URL}

@@ -74,7 +74,7 @@ export const LEGAL = {
 } as const;
 
 export const SOCIAL = {
-  facebook: "https://www.facebook.com/antoniadisandreas/",
+  facebook: "https://www.facebook.com/share/1cCZtpXbGo/",
 } as const;
 
 /**
